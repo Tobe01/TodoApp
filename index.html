@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tobechi's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="Fonts-6/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="index.js"></script>
+</head>
+
+<body>
+ 
+  <!-- This section contains codes for the Navigation area -->
+  <section id="Nav">
+    <nav class="flex justify-around pt-6 bg-slate-300">
+       <div class="text-2xl pt-2 mb-4">
+         <h1 class="name">Tobechi Duru</h1>
+       </div>
+       <div class="hidden md:flex space-x-5 text-2xl pt-2">
+          <div class="hamburger-nav"><p>About</p></div>
+          <div class="hamburger-nav"><p>Experience</p></div>
+          <div class="hamburger-nav"><p>Projects</p></div>
+          <div class="hamburger-nav"><p>Contact</p></div>
+       </div>
+       <span class="md:hidden hamburger-menu"><i class="fa-solid fa-bars"></i></span>
+    </nav>
+  </section>
+
+  <!-- This section contains codes for the page intro -->
+  <section id="Intro">
+     
+     <div class="intro-container pt-8 mt-8 md:flex md:m-auto md:align-middle md:justify-center md:space-x-10">
+      <div class="image-div w-48 md:w-80 m-auto md:m-0"><img class="image" src="Thumbnails/Tobe.jpeg"></div>
+      <div class="pt-8 flex-col">
+        <div class="text-center space-y-2">
+          <p class="subheading1">Hello, I'm</p>
+          <p class="font-bold text-3xl">Tobechi Duru</p>
+          <p class="subheading">Software Engineer</p>
+        </div>
+        <div class="align-middle justify-center space-x-4 flex mt-2 btn-container">
+          <button class="btn1">Download CV</button>
+          <button class="btn2">Contact Info</button>
+        </div>
+        <div class="flex justify-center m-auto align-middle space-x-4 text-3xl pt-3">
+          <span class="mt-1 cursor-pointer"><i class="fa-brands fa-linkedin"></i></span>
+          <span class="mt-1 cursor-pointer"><i class="fa-brands fa-square-x-twitter"></i></span>
+          <span class="mt-1 cursor-pointer"><i class="fa-brands fa-square-github"></i></span>
+        </div>
+      </div>
+     </div>
+
+  </section>
+
+  <!-- This section contains codes for the about area -->
+  <section id="About">
+    <div class="flex flex-col md:mt-24 m-auto align-middle justify-center">
+      <div class="text-center">
+        <h2 class="get-to-know-me md:text-sm md:-mb-1">Get To Know More</h2>
+        <p class="about-me md:text-40px">About Me</p>
+      </div>
+      <div class="md:pt-7 align-middle md:space-x-0 justify-center m-auto flex-col flex md:flex-row md:space-y-0 space-y-8">
+        <div class="about-image-div md:ml-10 w-48 md:w-80 m-auto md:m-0">
+          <img class="about-image md:rounded-3xl md:w-80" src="Thumbnails/download (5).jpeg">
+        </div>
+          <div class="space-y-8 md:space-y-6 md:w-1/2">
+            <div class="space-y-8 m-auto md:pt-9 md:space-y-0 md:space-x-6 align-middle justify-center flex flex-col md:flex-row">
+              <div class="experience-div md:w-52 md:py-6 md:m-0 md:space-y-1 md:rounded-3xl text-center">
+                <span class="about-me-icon md:text-lg"><i class="fa-solid fa-award"></i></span>
+                <p class="about-me-experience md:text-base">Experience</p>
+                <p class="get-to-know-me md:text-xs">1+ years</p>
+                <p class="get-to-know-me md:text-xs">Frontend Development</p>
+              </div>
+              <div class="education-div md:w-52 md:py-6 md:m-0 md:space-y-1 md:rounded-3xl text-center">
+                <span class="about-me-icon md:text-lg"><i class="fa-solid fa-graduation-cap"></i></span>
+                <p class="about-me-education md:text-base">Education</p>
+                <p class="get-to-know-me md:text-xs">Diploma, Software Engineering</p>
+                <p class="get-to-know-me md:text-xs">B.Eng, Bachelor of Engineering</p>
+              </div>
+            </div>
+            <div class="px-4 md:px-3 md:w-5/6 flex flex-col m-auto align-middle justify-center"> 
+              <p class="md:text-xs">seasoned full-stack software engineer who thrives on intricate code architecture and solving complex technical puzzles. I've architected and built robust, efficient, and scalable software applications across various domains, from web and mobile to cloud-based systems that can handle millions of requests, focusing on performance, security, and maintainability.
+              </p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- This section contaims codes for the Experience area -->
+  <section id="Experience">
+   <div class="mt-9 space-y-9 py-4">
+    <div class="text-center">
+      <h3 class="get-to-know-me md:text-sm md:-mb-1">Explore</h3>
+      <p class="about-me md:text-40px">Experience</p>
+    </div>
+    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:m-auto md:max-w-3xl md:space-x-3">
+      <div class="frontend-dev-div md:rounded-3xl flex m-auto align-middle justify-center flex-col py-8 md:py-3">
+        <p class="subheading text-center md:text-2xl">Frontend Development</p>
+        <div class="space-y-8 px-20 md:px-10 mt-10 md:mt-4 flex flex-col md:flex-row md:space-y-0 md:space-x-8">
+          <div class="md:space-y-8 space-y-8">
+            <div class="flex space-x-10">
+              <span class="text-5xl md:text-2xl"><i class="fa-brands fa-html5"></i></span>
+              <p class="about-me-education md:text-base">HTML</p>
+            </div>
+            <div class="flex space-x-10">
+              <span class="text-5xl md:text-2xl"><i class="fa-brands fa-css3-alt"></i></span>
+              <p class="about-me-education md:text-base">CSS</p>
+            </div>
+          </div>
+          <div class="md:space-y-8 space-y-8">
+            <div class="flex space-x-10">
+              <span class="text-5xl md:text-2xl"><i class="fa-brands fa-square-git"></i></span>
+              <p class="about-me-education md:text-base">Git</p>
+            </div>
+            <div class="flex space-x-10">
+              <span class="text-5xl md:text-2xl"><i class="fa-brands fa-js"></i></span>
+              <p class="about-me-education md:text-base">JavaScript</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+     
+      <div class="frontend-dev-div md:rounded-3xl flex m-auto align-middle justify-center flex-col py-8 md:py-3">
+        <p class="subheading text-center md:text-2xl px-9 md:px-0">Frontend Development</p>
+        <div class="space-y-8 px-20 md:px-10 mt-10 md:mt-4 flex flex-col md:flex-row md:space-y-0 md:space-x-8">
+          <div class="md:space-y-8 space-y-8">
+            <div class="flex space-x-10">
+              <span class="text-5xl md:text-2xl"><i class="fa-brands fa-react"></i></span>
+              <p class="about-me-education md:text-base">React-JS</p>
+            </div>
+            <div class="flex space-x-10">
+              <span class="text-5xl md:text-2xl"><i class="fa-brands fa-node-js"></i></span>
+              <p class="about-me-education md:text-base">Node-js</p>
+            </div>
+          </div>
+          <div class="md:space-y-8 space-y-8">
+            <div class="flex space-x-10">
+              <span class="text-5xl md:text-2xl"><i class="fa-brands fa-python"></i></span>
+              <p class="about-me-education md:text-base">Python</p>
+            </div>
+            <div class="flex space-x-10">
+              <span class="text-5xl md:text-2xl"><i class="fa-brands fa-linux"></i></span>
+              <p class="about-me-education md:text-base">Linux</p>
+            </div>
+        </div>
+      </div> 
+    </div>
+   </div>
+  </section>
+
+  <!-- This section contains codes for the Projects area -->
+  <section id="projects">
+    <div class="flex flex-col mt-8 py-7 space-y-8">
+      <div class="flex flex-col align-middle justify-center m-auto text-center">
+        <h4 class="get-to-know-me md:text-sm md:-mb-1">Browse My Recent</h4>
+        <p class="about-me md:text-40px">Projects</p>
+      </div>
+
+      <div class="flex flex-col md:flex-row space-y-7 md:space-y-0 md:m-auto md:space-x-6">
+        <div class="projects-container space-y-4">
+          <img class="projects-image" src="Thumbnails/project-1.png">
+          <p class="about-me-education text-center md:text-xl">Project One</p>
+          <div class="m-auto align-middle justify-center flex space-x-5 md:space-x-4">
+            <button class="projects-btn md:text-xs md:py-3 md:px-6">Github</button>
+            <button class="projects-btn md:text-xs md:py-3 md:px-6">Live Demo</button>
+          </div>
+        </div>
+        <div class="projects-container space-y-4">
+          <img class="projects-image" src="Thumbnails/project-2.png">
+          <p class="about-me-education text-center md:text-xl">Project Two</p>
+          <div class="m-auto align-middle justify-center flex space-x-5 md:space-x-4">
+            <button class="projects-btn md:text-xs md:py-3 md:px-6">Github</button>
+            <button class="projects-btn md:text-xs md:py-3 md:px-6">Live Demo</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="projects-container space-y-4 md:m-auto md:max-w-3xl">
+        <img class="projects-image md:w-auto" src="Thumbnails/project-3.png">
+        <p class="about-me-education text-center md:text-xl">Project Three</p>
+        <div class="m-auto align-middle justify-center flex space-x-5 md:space-x-4">
+          <button class="projects-btn md:text-xs md:py-3 md:px-6">Github</button>
+          <button class="projects-btn md:text-xs md:py-3 md:px-6">Live Demo</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+  <!-- This section contains codes for the Contacts area -->
+  <section id="Contacts">
+
+    <div class="flex flex-col m-auto align-middle justify-center space-y-7 pt-8 pb-8">
+
+      <div class="text-center py-2">
+        <h5 class="get-to-know-me md:text-sm md:-mb-1">Get in Touch</h5>
+        <p class="about-me md:text-40px">Contact Me</p>
+      </div>
+
+      <div class="projects-container flex flex-col md:flex-row md:space-x-4 align-middle justify-center py-5 space-y-4 md:space-y-0">
+        <div class="flex m-auto align-middle justify-center cursor-pointer space-x-4">
+          <span class="contacts-icon bg-black text-white text-xl px-2 py-1"><i class="fa-solid fa-phone"></i></span>
+          <p class="pt-2 get-to-know-me md:text-sm">Phone</p>
+        </div>
+        <div class="flex m-auto align-middle justify-center cursor-pointer space-x-4">
+          <span class="contacts-icon bg-black text-white text-2xl px-2 py-1 md:text-xl"><i class="fa-brands fa-linkedin-in"></i></span>
+          <p class="pt-2 get-to-know-me md:text-sm">Linkedin</p>
+        </div>
+        <div class="flex m-auto align-middle justify-center cursor-pointer space-x-4">
+          <span class="contacts-icon bg-black text-white text-3xl px-2 py-1 md:text-xl"><i class="fa-regular fa-envelope"></i></span>
+          <p class="pt-2 get-to-know-me md:text-sm">tobechi.duru001@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="text-center space-y-5 py-5 md:flex md:space-y-0 md:py-5 md:m-auto md:align-middle md:justify-center md:space-x-5 md:text-2xl">
+        <div class="hamburger-nav2 get-to-know-me"><p>About</p></div>
+        <div class="hamburger-nav2 get-to-know-me"><p>Experience</p></div>
+        <div class="hamburger-nav2 get-to-know-me"><p>Projects</p></div>
+        <div class="hamburger-nav2 get-to-know-me"><p>Contact</p></div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- This section contains codes for the footer -->
+  <footer>
+    <div class="bg-slate-300 align-middle justify-center flex m-auto flex-col text-center py-5 px-2">
+      <p class="get-to-know-me md:text-sm text-black">Designed & Developed by Tobechi Duru.</p>
+      <p class="get-to-know-me md:text-sm text-black">Copyright &copy; 2024 Tobechi Duru. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

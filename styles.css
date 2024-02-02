@@ -5,6 +5,13 @@ body {
   height: 3000px;
 }
 
+.navigation-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .hamburger-menu {
   font-size: 35px;
 }
@@ -100,7 +107,7 @@ body {
 .experience-div, .education-div {
   padding: 22px 0;
   border-radius: 35px;
-  width: 370px;
+  width: 350px;
   margin: auto;
   border: 1px solid rgb(113, 112, 112);
 }
@@ -135,7 +142,7 @@ body {
 }
 
 .projects-container {
-  padding: 28px 30px;
+  padding: 28px 16px;
   border-radius: 35px;
   margin: auto;
   border: 1px solid rgb(113, 112, 112);

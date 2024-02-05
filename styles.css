@@ -12,8 +12,34 @@ body {
   right: 0;
 }
 
-.hamburger-menu {
+.hamburger-menu { 
   font-size: 35px;
+  margin-right: 113px;
+  padding-top: 13px;
+}
+
+.sidebar {
+  padding-top: 38px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 320px;
+  width: 151px;
+  background-color: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-contents:hover{
+  background-color: rgb(225, 225, 225);
+}
+
+.sidebar-contents:active{
+  background-color: rgb(225, 225, 225);
 }
 
 .hamburger-nav, .hamburger-nav2 {

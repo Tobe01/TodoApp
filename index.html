@@ -18,17 +18,37 @@
   <!-- This section contains codes for the Navigation area -->
   <section id="Nav">
     <nav class="navigation-bar flex justify-around pt-6 bg-slate-300">
+
        <div class="text-2xl pt-2 mb-4">
          <h1 class="name">Tobechi Duru</h1>
        </div>
-       <div class="hidden md:flex space-x-5 text-2xl pt-2">
-          <div class="hamburger-nav"><p>About</p></div>
-          <div class="hamburger-nav"><p>Experience</p></div>
-          <div class="hamburger-nav"><p>Projects</p></div>
-          <div class="hamburger-nav"><p>Contact</p></div>
+
+       <div>
+
+        <ul class="sidebar space-y-5 hidden text-2xl">
+          <li onclick="hideMenu();"><a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+          <li class="sidebar-contents"><a>About</a></li>
+          <li class="sidebar-contents"><a>Experience</a></li>
+          <li class="sidebar-contents"><a>Projects</a></li>
+          <li class="sidebar-contents"><a>Contact</a></li>
+        </ul>
+
+        <ul class="hidden md:flex space-x-5 text-2xl pt-2">
+          <li class="hamburger-nav"><a>About</a></li>
+          <li class="hamburger-nav"><a>Experience</a></li>
+          <li class="hamburger-nav"><a>Projects</a></li>
+          <li class="hamburger-nav"><a>Contact</a></li>
+        </ul>
+
+        <li class="hamburger-menu flex md:hidden" onclick="showMenu();"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
        </div>
-       <span class="md:hidden hamburger-menu"><i class="fa-solid fa-bars"></i></span>
+
+       <!-- <div class="md:hidden bg-green-500 hamburger-menu justify" onclick="toggleMenu();"> -->
+        <!-- <span class="hamburger"><i class="fa-solid fa-bars"></i></span> -->
+       <!-- </div> -->
+
     </nav>
+
   </section>
 
   <!-- This section contains codes for the page intro -->

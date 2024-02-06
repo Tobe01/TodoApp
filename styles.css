@@ -13,9 +13,18 @@ body {
 }
 
 .hamburger-menu { 
-  font-size: 35px;
-  margin-right: 113px;
-  padding-top: 13px;
+  padding-top: 11px;
+}
+
+.close-menu {
+ margin: -7px 37px 0 auto;
+ padding-top: 5px;
+}
+
+.side-bar-contents-div {
+  background-color: white;
+  margin-top: 19.5px;
+  height: 247px;
 }
 
 .sidebar {
@@ -23,15 +32,13 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  height: 320px;
+  height: 340px;
   width: 151px;
-  background-color: rgb(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
   z-index: 999;
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 2px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-contents:hover{

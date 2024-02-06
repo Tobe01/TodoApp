@@ -19,18 +19,26 @@
   <section id="Nav">
     <nav class="navigation-bar flex justify-around pt-6 bg-slate-300">
 
-       <div class="text-2xl pt-2 mb-4">
+       <div class="pt-2 mb-4">
          <h1 class="name">Tobechi Duru</h1>
        </div>
 
        <div>
 
-        <ul class="sidebar space-y-5 hidden text-2xl">
-          <li onclick="hideMenu();"><a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-          <li class="sidebar-contents"><a>About</a></li>
-          <li class="sidebar-contents"><a>Experience</a></li>
-          <li class="sidebar-contents"><a>Projects</a></li>
-          <li class="sidebar-contents"><a>Contact</a></li>
+        <ul class="sidebar  bg-slate-300 hidden text-2xl">
+          <div class="close-menu" onclick="hideMenu();">
+            <span><svg xmlns="http://www.w3.org/2000/svg" height="38" viewBox="0 -960 960 960" width="38"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </span>
+          </div>
+          <div>
+
+         <div class="space-y-4 side-bar-contents-div">
+          <li class="sidebar-contents py-2 px-2"><a>About</a></li>
+          <li class="sidebar-contents py-2 px-2"><a>Experience</a></li>
+          <li class="sidebar-contents py-2 px-2"><a>Projects</a></li>
+          <li class="sidebar-contents py-2 px-2"><a>Contact</a></li>
+         </div>
+
         </ul>
 
         <ul class="hidden md:flex space-x-5 text-2xl pt-2">
@@ -40,7 +48,11 @@
           <li class="hamburger-nav"><a>Contact</a></li>
         </ul>
 
-        <li class="hamburger-menu flex md:hidden" onclick="showMenu();"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        <div class="flex md:hidden" onclick="showMenu();">
+          <span class="hamburger-menu" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="38" viewBox="0 -960 960 960" width="38"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+          </span>
+        </div>
+
        </div>
 
        <!-- <div class="md:hidden bg-green-500 hamburger-menu justify" onclick="toggleMenu();"> -->

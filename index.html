@@ -33,19 +33,21 @@
           <div>
 
          <div class="space-y-4 side-bar-contents-div">
-          <li class="sidebar-contents py-2 px-2"><a>About</a></li>
-          <li class="sidebar-contents py-2 px-2"><a>Experience</a></li>
-          <li class="sidebar-contents py-2 px-2"><a>Projects</a></li>
-          <li class="sidebar-contents py-2 px-2"><a>Contact</a></li>
+          <ul>
+            <li class="sidebar-contents py-2 px-2"><a href="#about">About</a></li>
+            <li class="sidebar-contents py-2 px-2"><a href="#experience">Experience</a></li>
+            <li class="sidebar-contents py-2 px-2"><a href="#projects">Projects</a></li>
+            <li class="sidebar-contents py-2 px-2"><a href="#contact">Contact</a></li>
+          </ul>
          </div>
 
         </ul>
 
         <ul class="hidden md:flex space-x-5 text-2xl pt-2">
-          <li class="hamburger-nav"><a>About</a></li>
-          <li class="hamburger-nav"><a>Experience</a></li>
-          <li class="hamburger-nav"><a>Projects</a></li>
-          <li class="hamburger-nav"><a>Contact</a></li>
+          <li class="hamburger-nav"><a href="#about">About</a></li>
+          <li class="hamburger-nav"><a href="#experience">Experience</a></li>
+          <li class="hamburger-nav"><a href="#projects">Projects</a></li>
+          <li class="hamburger-nav"><a href="#contact">Contact</a></li>
         </ul>
 
         <div class="flex md:hidden" onclick="showMenu();">
@@ -76,12 +78,18 @@
         </div>
         <div class="align-middle justify-center space-x-4 flex mt-2 btn-container">
           <button class="btn1">Download CV</button>
-          <button class="btn2">Contact Info</button>
+          <button class="btn2"><a href="#contact">Contact Info</a></button>
         </div>
         <div class="flex justify-center m-auto align-middle space-x-4 text-3xl pt-3">
-          <span class="mt-1 cursor-pointer"><i class="fa-brands fa-linkedin"></i></span>
-          <span class="mt-1 cursor-pointer"><i class="fa-brands fa-square-x-twitter"></i></span>
-          <span class="mt-1 cursor-pointer"><i class="fa-brands fa-square-github"></i></span>
+            <a href="https:linkedin.com/in/tobechiduru">
+              <span class="mt-1 cursor-pointer"><i class="fa-brands fa-linkedin"></i></span>
+            </a>
+            <a href="https://twitter.com/_engrtee">
+              <span class="mt-1 cursor-pointer"><i class="fa-brands fa-square-x-twitter"></i></span>
+            </a>
+            <a href="https://github.com/Tobe01">
+              <span class="mt-1 cursor-pointer"><i class="fa-brands fa-square-github"></i></span>
+            </a>
         </div>
       </div>
      </div>
@@ -89,7 +97,7 @@
   </section>
 
   <!-- This section contains codes for the about area -->
-  <section id="About">
+  <section id="about">
     <div class="flex flex-col md:mt-24 m-auto align-middle justify-center">
       <div class="text-center">
         <h2 class="get-to-know-me md:text-sm md:-mb-1">Get To Know More</h2>
@@ -124,7 +132,7 @@
   </section>
 
   <!-- This section contaims codes for the Experience area -->
-  <section id="Experience">
+  <section id="experience">
    <div class="mt-9 space-y-9 py-4">
     <div class="text-center">
       <h3 class="get-to-know-me md:text-sm md:-mb-1">Explore</h3>
@@ -226,7 +234,7 @@
   </section>
   
   <!-- This section contains codes for the Contacts area -->
-  <section id="Contacts">
+  <section id="contact">
 
     <div class="flex flex-col m-auto align-middle justify-center space-y-7 pt-8 pb-8">
 
@@ -241,20 +249,22 @@
           <a class="pt-2 get-to-know-me md:text-sm">Phone</a>
         </div>
         <div class="flex m-auto align-middle justify-center cursor-pointer space-x-4">
-          <span class="contacts-icon bg-black text-white text-2xl px-2 py-1 md:text-xl"><i class="fa-brands fa-linkedin-in"></i></span>
-          <a href="www.linkedin.com/in/tobechiduru" class="pt-2 get-to-know-me md:text-sm">Linkedin</a>
+          <a class="flex space-x-1" href="https:linkedin.com/in/tobechiduru"><span class="contacts-icon bg-black text-white text-2xl px-2 py-1 md:text-xl"><i class="fa-brands fa-linkedin-in"></i></span>
+            <p class="pt-2 get-to-know-me md:text-sm">Linkedin</p>
+          </a>
         </div>
         <div class="flex m-auto align-middle justify-center cursor-pointer space-x-4">
-          <span class="contacts-icon bg-black text-white text-3xl px-2 py-1 md:text-xl"><i class="fa-regular fa-envelope"></i></span>
-          <a class="pt-2 get-to-know-me md:text-sm">tobechi.duru001@gmail.com</a>
+          <a><span class="contacts-icon bg-black text-white text-3xl px-2 py-1 md:text-xl"><i class="fa-regular fa-envelope"></i></span>
+          </a>
+          <p class="pt-2 get-to-know-me md:text-sm">tobechi.duru001@gmail.com</p>
         </div>
       </div>
 
       <div class="text-center space-y-5 py-5 md:flex md:space-y-0 md:py-5 md:m-auto md:align-middle md:justify-center md:space-x-5 md:text-2xl">
-        <div class="hamburger-nav2 get-to-know-me"><p>About</p></div>
-        <div class="hamburger-nav2 get-to-know-me"><p>Experience</p></div>
-        <div class="hamburger-nav2 get-to-know-me"><p>Projects</p></div>
-        <div class="hamburger-nav2 get-to-know-me"><p>Contact</p></div>
+        <div class="hamburger-nav2 get-to-know-me"><a href="#about">About</a></div>
+        <div class="hamburger-nav2 get-to-know-me"><a href="#experience">Experience</a></div>
+        <div class="hamburger-nav2 get-to-know-me"><a href="#projects">Projects</a></div>
+        <div class="hamburger-nav2 get-to-know-me"><a href="#contact">Contact</a></div>
       </div>
 
     </div>
@@ -269,6 +279,7 @@
     </div>
   </footer>
 
+  <button id="scroll-to-top-btn" onclick="scrollToTop()"><a class="scroll-icon"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="m296-224-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Z"/></svg></a></button>
 
 </body>
 

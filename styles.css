@@ -185,3 +185,28 @@ body {
   border-radius: 50%;
 }
 
+/* Styles for scroll-to-top button */
+
+#scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color:  slategrey;
+  border: none;
+  padding: 20px 20px;
+  cursor: pointer;
+  display: none;
+  border-radius: 50%;
+  animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce {
+0% {
+  transform: translateY(0);
+}
+100% {
+  transform: translateY(-10px);
+}
+}
+
+

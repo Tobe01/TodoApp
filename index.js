@@ -1,5 +1,7 @@
 // Javascript code for Portfolio Project
 
+// Hamburger Menu
+
 function showMenu (){
   const sidebar = document.querySelector('.sidebar')
    sidebar.style.display = 'flex';
@@ -8,6 +10,12 @@ function showMenu (){
 function hideMenu (){
   const sidebar = document.querySelector('.sidebar')
   sidebar.style.display = 'none';
+}
+
+// Github repository and live Demo
+
+function live (){
+  alert('Project ongoing!');
 }
 
 // Smooth scrolling effect

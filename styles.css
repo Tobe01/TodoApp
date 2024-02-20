@@ -5,7 +5,8 @@ body {
   height: 3000px;
 }
 
-.navigation-bar {
+header {
+  padding-top: 15px;
   position: fixed;
   top: 0;
   left: 0;
@@ -13,27 +14,29 @@ body {
 }
 
 .hamburger-menu { 
-  padding-top: 11px;
+  padding: 5px 0 0 0;
 }
 
 .close-menu {
- margin: -7px 37px 0 auto;
- padding-top: 5px;
+ margin-left: auto;
+ margin-right: 39px;
+ padding: 5px 0 0 0;
 }
 
 .side-bar-contents-div {
   background-color: white;
-  margin-top: 19.5px;
-  height: 247px;
+  margin: 9.5px 0 0 0;
+  padding-top: 10px;
+  height: 260px;
 }
 
 .sidebar {
-  padding-top: 38px;
+  margin-top: 17.5px;
   position: fixed;
+  border-top-right-radius: 22px;
   top: 0;
   right: 0;
-  height: 340px;
-  width: 151px;
+  width: 204px;
   z-index: 999;
   display: flex;
   flex-direction: column;
@@ -61,12 +64,8 @@ body {
   border-bottom: 3px solid white;
 }
 
-.hamburger-nav2:hover{
-  border-bottom: 3px solid slategrey;
-}
-
 .intro-container {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 .image {
@@ -127,7 +126,7 @@ body {
 
 .get-to-know-me {
   color:  rgb(113, 112, 112);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
 }
 
@@ -181,9 +180,13 @@ body {
   border: 1px solid rgb(113, 112, 112);
 }
 
-.contacts-icon {
-  border-radius: 50%;
+.contacts-container {
+  padding: 0 36px;
+  border-radius: 35px;
+  margin: auto;
+  border: 1px solid rgb(113, 112, 112);
 }
+
 
 /* Styles for scroll-to-top button */
 
@@ -191,7 +194,7 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color:  slategrey;
+  background-color:  rgb(233, 235, 237);
   border: none;
   padding: 20px 20px;
   cursor: pointer;

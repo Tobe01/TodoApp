@@ -30,6 +30,8 @@ document.querySelectorAll('nav a').forEach(anchor => {
           top: target.offsetTop,
           behavior: 'smooth'
       });
+
+      hideMenu(); // Close the menu after clicking on a link
   });
 });
 

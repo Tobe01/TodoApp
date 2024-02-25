@@ -5,12 +5,33 @@ body {
   height: 3000px;
 }
 
+.falling-animation-container {
+  animation: fall-in 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fall-in {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 header {
   padding-top: 15px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
+}
+
+.navigation-bar {
+  background-color:  rgb(233, 235, 237);
 }
 
 .hamburger-menu { 
@@ -210,6 +231,20 @@ header {
 100% {
   transform: translateY(-10px);
 }
+}
+
+/* Read more link in the About Section */
+
+#read-more-link {
+  color: #007bff; /* Change the color of the link */
+  font-weight: bold; /* Make the text bold */
+  text-decoration: underline; /* Add underline to indicate it's a link */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: color 0.3s; /* Add transition for smoother color change */
+}
+
+#read-more-link:hover {
+  color: #0056b3; /* Change color on hover */
 }
 
 

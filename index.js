@@ -51,3 +51,24 @@ function scrollToTop() {
       behavior: 'smooth'
   });
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Get references to the read more link and the hidden content
+  var readMoreLink = document.getElementById("read-more-link");
+  var moreContent = document.getElementById("more-content");
+
+  // Add click event listener to the read more link
+  readMoreLink.addEventListener("click", function(event) {
+    // Prevent default behavior of the link
+    event.preventDefault();
+
+    // Toggle the visibility of the hidden content
+    if (moreContent.style.display === "none") {
+      moreContent.style.display = "inline"; // or "block" for block-level elements
+      readMoreLink.textContent = "Read less";
+    } else {
+      moreContent.style.display = "none";
+      readMoreLink.textContent = "Read more";
+    }
+  });
+});

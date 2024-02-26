@@ -21,6 +21,19 @@ body {
   }
 }
 
+.image-div {
+ animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce {
+0% {
+  transform: translateY(0);
+}
+100% {
+  transform: translateY(-50px);
+}
+}
+
 header {
   padding-top: 15px;
   position: fixed;

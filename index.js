@@ -18,7 +18,7 @@ function live (){
   alert('Project ongoing!');
 }
 
-// Smooth scrolling effect
+// Section scrolling effect
 
 document.querySelectorAll('nav a').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
@@ -30,8 +30,6 @@ document.querySelectorAll('nav a').forEach(anchor => {
           top: target.offsetTop,
           behavior: 'smooth'
       });
-
-      hideMenu(); // Close the menu after clicking on a link
   });
 });
 

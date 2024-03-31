@@ -1,10 +1,41 @@
-// Javascript code for Portfolio Project
+// JavaScript code for portfolio site
 
-// Hamburger Menu
+window.addEventListener('scroll', function() {
+  var navbar = document.getElementById('navbar');
+  if (window.scrollY > 0) {
+    navbar.style.display = 'flex';
+  } else {
+    navbar.style.display = 'none';
+  }
+});
 
+// smooth scroll to each section
+
+document.addEventListener('DOMContentLoaded', function () {
+  const links = document.querySelectorAll('nav a');
+
+  links.forEach(link => {
+      link.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+              const yOffset = -60; // Adjust this value as needed to offset for any fixed headers
+              const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+              window.scrollTo({ top: y, behavior: 'smooth' });
+          }
+      });
+  });
+});
+
+
+// Hamburger Menu 
 function showMenu (){
   const sidebar = document.querySelector('.sidebar')
-   sidebar.style.display = 'flex';
+  sidebar.style.display = 'flex';
 }
 
 function hideMenu (){
@@ -12,11 +43,97 @@ function hideMenu (){
   sidebar.style.display = 'none';
 }
 
-// Github repository and live Demo
-
-function live (){
-  alert('Project ongoing!');
+// code for Darkmode
+function toggleDarkMode() {
+  const body = document.body;
+  body.classList.toggle('dark-mode');
 }
+
+  // rotate
+  document.addEventListener('DOMContentLoaded', function() {
+// Simulate loading delay for demonstration
+setTimeout(function() {
+  // Remove loader and display content
+  document.getElementById('loader-wrapper').style.display = 'none';
+  document.getElementById('content').style.display = 'block';
+}, 2000); // Adjust the delay time (in milliseconds) as needed
+
+// Update progress bar as content loads
+const progressBar = document.getElementById('progress-bar-inner');
+let progress = 0;
+const interval = setInterval(function() {
+  progress += 10; // Increment progress (for demonstration)
+  progressBar.style.width = progress + '%'; // Update progress bar width
+  if (progress >= 100) {
+    clearInterval(interval); // Stop interval when progress reaches 100%
+  }
+}, 200); // Adjust interval time (in milliseconds) as needed
+});
+
+// toggle ON and OFF icon
+ function toggleOn (){
+  const toggle = document.querySelector('.toggle')
+  toggle.style.display = 'flex';
+ }
+
+ function toggleOff (){
+  const toggle = document.querySelector('.toggle')
+  toggle.style.display = 'none';
+ }
+
+function hideToggle (){
+  const toggle2 = document.querySelector('.toggle2')
+  toggle2.style.display = 'none';
+}
+
+function showToggle (){
+  const toggle2 = document.querySelector('.toggle2')
+  toggle2.style.display = 'flex';
+}
+
+// Read more contents 
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Get references to the read more link and the hidden content
+  var readMoreLink = document.getElementById("read-more-link");
+  var moreContent = document.getElementById("more-content");
+
+  // Add click event listener to the read more link
+  readMoreLink.addEventListener("click", function(event) {
+    // Prevent default behavior of the link
+    event.preventDefault();
+
+    // Toggle the visibility of the hidden content
+    if (moreContent.style.display === "none") {
+      moreContent.style.display = "inline"; // or "block" for block-level elements
+      readMoreLink.textContent = "...Read less";
+    } else {
+      moreContent.style.display = "none";
+      readMoreLink.textContent = "...Read more";
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Get references to the read more link and the hidden content
+  var readMoreLink = document.getElementById("read-more-linkk");
+  var moreContent = document.getElementById("more-contentt");
+
+  // Add click event listener to the read more link
+  readMoreLink.addEventListener("click", function(event) {
+    // Prevent default behavior of the link
+    event.preventDefault();
+
+    // Toggle the visibility of the hidden content
+    if (moreContent.style.display === "none") {
+      moreContent.style.display = "inline"; // or "block" for block-level elements
+      readMoreLink.textContent = "...Read less";
+    } else {
+      moreContent.style.display = "none";
+      readMoreLink.textContent = "...Read more";
+    }
+  });
+});
 
 // Section scrolling effect
 

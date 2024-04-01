@@ -49,54 +49,6 @@ function hideMenu (){
   sidebar.style.display = 'none';
 }
 
-// code for Darkmode
-function toggleDarkMode() {
-  const body = document.body;
-  body.classList.toggle('dark-mode');
-}
-
-  // rotate
-  document.addEventListener('DOMContentLoaded', function() {
-// Simulate loading delay for demonstration
-setTimeout(function() {
-  // Remove loader and display content
-  document.getElementById('loader-wrapper').style.display = 'none';
-  document.getElementById('content').style.display = 'block';
-}, 2000); // Adjust the delay time (in milliseconds) as needed
-
-// Update progress bar as content loads
-const progressBar = document.getElementById('progress-bar-inner');
-let progress = 0;
-const interval = setInterval(function() {
-  progress += 10; // Increment progress (for demonstration)
-  progressBar.style.width = progress + '%'; // Update progress bar width
-  if (progress >= 100) {
-    clearInterval(interval); // Stop interval when progress reaches 100%
-  }
-}, 200); // Adjust interval time (in milliseconds) as needed
-});
-
-// toggle ON and OFF icon
- function toggleOn (){
-  const toggle = document.querySelector('.toggle')
-  toggle.style.display = 'flex';
- }
-
- function toggleOff (){
-  const toggle = document.querySelector('.toggle')
-  toggle.style.display = 'none';
- }
-
-function hideToggle (){
-  const toggle2 = document.querySelector('.toggle2')
-  toggle2.style.display = 'none';
-}
-
-function showToggle (){
-  const toggle2 = document.querySelector('.toggle2')
-  toggle2.style.display = 'flex';
-}
-
 
 // Read more for About contents
 

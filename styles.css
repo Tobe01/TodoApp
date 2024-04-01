@@ -67,19 +67,12 @@ body {
   background-color: white;
 }
 
+.toggleBtn {
+  width: 60px;
+}
 
 /* CSS for Dark mode */
 
-.toggle-button {
-  cursor: pointer;
-  border-radius: 1em;
-  border-color: #DAE3E7;
-}
-
-.dark-mode {
-  background-color: #333;
-  color: #fff;
-}
 
 
 /* Read more link in the About Section */

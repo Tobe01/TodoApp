@@ -22,8 +22,7 @@
 
       <div class="tiny-nav justify-between relative flex px-5 py-1">
 
-        <div style="border: 2px solid grey; border-radius: 50%; width: 50px;
-        height: 50px;">
+        <div>
           <img class="rounded-full" style="width: 50px;
           height: 50px;" src="Thumbnails/Tobeee.jpg">
         </div>
@@ -52,8 +51,8 @@
             <div class="links py-4 px-3 cursor-point rounded-md shadow-sm">
               <li><a href="#about">About</a></li>
             </div>
-            <div class="links py-4 px-3 cursor-point rounded-md shadow-sm">
-              <li><a href="certifications.html">Certifications</a></li>
+            <div onclick="goToPage ('certifications.html')" class="links py-4 px-3 cursor-point rounded-md shadow-sm">
+              <li><a>Certifications</a></li>
             </div>
             <div class="links py-4 px-3 cursor-point rounded-md shadow-sm">
               <li><a href="#projects">Projects</a></li>
@@ -123,25 +122,25 @@
               <div class="hidden md:flex py-1 text-base">
                 <ul class="flex">
 
-                  <div class="links flex flex-col py-1 px-3 cursor-point rounded-md shadow-sm">
+                  <div class="links flex flex-col py-1 px-3 cursor-pointer rounded-md shadow-sm">
                     <li><a href="#about">
                       <span>About</span>
                      </a></li>
                   </div>
 
-                  <div class="links flex flex-col py-1 px-3 cursor-point rounded-md shadow-sm">
-                    <li><a href="certifications.html">
+                  <div onclick="goToPage('certifications.html');" class="links flex flex-col py-1 px-3 cursor-pointer rounded-md shadow-sm">
+                    <li><a>
                     <span>Certifications</span>
                     </a></li>
                   </div>
 
-                  <div class="links flex flex-col py-1 px-3 cursor-point rounded-md shadow-sm">
+                  <div class="links flex flex-col py-1 px-3 cursor-pointer rounded-md shadow-sm">
                     <li><a href="#projects">
                       <span>Projects</span>
                       </a></li>
                   </div>
 
-                    <div class="links flex flex-col py-1 px-3 cursor-point rounded-md shadow-sm">
+                    <div class="links flex flex-col py-1 px-3 cursor-pointer rounded-md shadow-sm">
                       <li><a href="#stacks">
                         <span>Stacks</span>
                        </a></li>  
@@ -181,7 +180,7 @@
     </nav>
   </header>
 
-  <section id="About" id="Education"> <!--About Section-->
+  <section id="About"> <!--About Section-->
    <main>
     <div class="About-container">
       <div class="flex m-auto align-middle justify-around">
@@ -199,14 +198,14 @@
                     Expertise in frontend development, with a focus on creating efficient, clean and maintainable code.
                     Experienced in full software development life cycle, from concept to 
                   </p>
-                  <span id="more-content" style="display: none;">
+                  <span id="show-contentt" style="display: none;">
                     delivery. 
                     Adept at collaborating with cross-functional teams including product designers,
                     product managers, and backend engineers to drive project success.
                     Good understanding of UI/UX principles, with a collaborative approach to deliver 
                     high-quality software that meets or exceeds client expectations. 
                   </span> 
-                  <a href="#" id="read-more-link" onclick="readMore(); readLess();">...Read more</a>  
+                  <a href="#" id="show-more-linkk" onclick="readMore(); readLess();">...Read more</a>  
                 </div>
                </div>
   

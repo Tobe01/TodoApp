@@ -31,6 +31,12 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// link pages
+
+function goToPage (url){
+  window.location.href = url;
+}
+
 
 // Hamburger Menu 
 function showMenu (){
@@ -91,28 +97,32 @@ function showToggle (){
   toggle2.style.display = 'flex';
 }
 
-// Read more contents 
+
+// Read more for About contents
 
 document.addEventListener("DOMContentLoaded", function() {
   // Get references to the read more link and the hidden content
-  var readMoreLink = document.getElementById("read-more-link");
-  var moreContent = document.getElementById("more-content");
+  var showMoreLink = document.getElementById("show-more-linkk");
+  var showContent = document.getElementById("show-contentt");
 
   // Add click event listener to the read more link
-  readMoreLink.addEventListener("click", function(event) {
+   showMoreLink.addEventListener("click", function(event) {
     // Prevent default behavior of the link
     event.preventDefault();
 
     // Toggle the visibility of the hidden content
-    if (moreContent.style.display === "none") {
-      moreContent.style.display = "inline"; // or "block" for block-level elements
-      readMoreLink.textContent = "...Read less";
+    if (showContent.style.display === "none") {
+      showContent.style.display = "inline"; // or "block" for block-level elements
+      showMoreLink.textContent = "...Read less";
     } else {
-      moreContent.style.display = "none";
-      readMoreLink.textContent = "...Read more";
+      showContent.style.display = "none";
+      showMoreLink.textContent = "...Read more";
     }
   });
 });
+
+
+// Read more for Work experience contents
 
 document.addEventListener("DOMContentLoaded", function() {
   // Get references to the read more link and the hidden content
@@ -134,6 +144,20 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+
+
+function toggleText() {
+  var moreText = document.getElementById("more-text");
+  var btnText = document.getElementById("toggle-btn");
+
+  if (moreText.style.display === "none") {
+      moreText.style.display = "inline";
+      btnText.innerHTML = "Show less";
+  } else {
+      moreText.style.display = "none";
+      btnText.innerHTML = "Show more";
+  }
+}
 
 // Section scrolling effect
 
@@ -189,3 +213,4 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+

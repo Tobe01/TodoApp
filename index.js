@@ -9,6 +9,19 @@ window.addEventListener('scroll', function() {
   }
 });
 
+// Dark mode 
+
+var icon = document.getElementById("icon");
+
+icon.onclick = function (){
+  document.body.classList.toggle("dark-theme");
+  if(document.body.classList.contains("dark-theme")){
+    icon.src = "thumbnails/toggle on.jpg";
+  }else {
+    icon.src = "Thumbnails/toggle off.jpg";
+  }
+}
+
 // smooth scroll to each section
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -48,7 +61,6 @@ function hideMenu (){
   const sidebar = document.querySelector('.sidebar')
   sidebar.style.display = 'none';
 }
-
 
 // Read more for About contents
 

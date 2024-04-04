@@ -72,15 +72,15 @@ soc1 {
   --animation-delay: 10ms;
 }
 
-soc1 {
+soc2 {
   --animation-delay: 200ms;
 }
 
-soc1 {
+soc3 {
   --animation-delay: 400ms;
 }
 
-soc1 {
+soc4 {
   --animation-delay: 600ms;
 }
 
@@ -126,6 +126,7 @@ soc1 {
 .tiny-nav {
   backdrop-filter: blur(5px);
   background-color: rgba(0, 0, 0, 0.6);
+  z-index: 200;
 }
 
 .toggle-image {

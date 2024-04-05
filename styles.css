@@ -243,6 +243,12 @@ h1 span {
   height: auto;
 }
 
+.watch-img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 265px;
+}
+
 /* Styles for scroll-to-top button */
 
 #scroll-to-top-btn {

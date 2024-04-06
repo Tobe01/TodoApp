@@ -10,7 +10,6 @@ window.addEventListener('scroll', function() {
 });
 
 // Dark mode 
-
 var icon = document.getElementById("icon");
 
 icon.onclick = function (){
@@ -20,7 +19,7 @@ icon.onclick = function (){
   }else {
     icon.src = "Thumbnails/toggle off.jpg";
   }
-}
+} 
 
 // smooth scroll to each section
 
@@ -64,50 +63,35 @@ function hideMenu (){
 
 // Read more for About contents
 
-document.addEventListener("DOMContentLoaded", function() {
-  // Get references to the read more link and the hidden content
-  var showMoreLink = document.getElementById("show-more-linkk");
-  var showContent = document.getElementById("show-contentt");
+function toggleText() {
+  var moreText = document.getElementById("more-text");
+  var btnText = document.getElementById("show-more-btn");
 
-  // Add click event listener to the read more link
-   showMoreLink.addEventListener("click", function(event) {
-    // Prevent default behavior of the link
-    event.preventDefault();
+  if (moreText.style.display === "none") {
+      moreText.style.display = "inline";
+      btnText.innerHTML = "(... Show less)";
+  } else {
+      moreText.style.display = "none";
+      btnText.innerHTML = "(... Show more)";
+  }
+}
 
-    // Toggle the visibility of the hidden content
-    if (showContent.style.display === "none") {
-      showContent.style.display = "inline"; // or "block" for block-level elements
-      showMoreLink.textContent = "...Read less";
-    } else {
-      showContent.style.display = "none";
-      showMoreLink.textContent = "...Read more";
-    }
-  });
-});
 
 
 // Read more for Work experience contents
 
-document.addEventListener("DOMContentLoaded", function() {
-  // Get references to the read more link and the hidden content
-  var readMoreLink = document.getElementById("read-more-linkk");
-  var moreContent = document.getElementById("more-contentt");
+function toggleHiddenContent() {
+  var hiddenDiv = document.getElementById('hiddenContent');
+  var readMeText = document.querySelector('.read-me');
 
-  // Add click event listener to the read more link
-  readMoreLink.addEventListener("click", function(event) {
-    // Prevent default behavior of the link
-    event.preventDefault();
-
-    // Toggle the visibility of the hidden content
-    if (moreContent.style.display === "none") {
-      moreContent.style.display = "inline"; // or "block" for block-level elements
-      readMoreLink.textContent = "...Read less";
-    } else {
-      moreContent.style.display = "none";
-      readMoreLink.textContent = "...Read more";
-    }
-  });
-});
+  if (hiddenDiv.style.display === 'none') {
+    hiddenDiv.style.display = 'block';
+    readMeText.textContent = 'Read Less';
+  } else {
+    hiddenDiv.style.display = 'none';
+    readMeText.textContent = '... Read Me';
+  }
+}
 
 
 function toggleText() {
@@ -138,10 +122,11 @@ document.querySelectorAll('nav a').forEach(anchor => {
   });
 });
 
+
 // Show or hide scroll-to-top button based on scroll position
 
 window.addEventListener('scroll', function() {
-  if (window.pageYOffset > 100) {
+  if (window.scrollY > 100) {
       document.getElementById('scroll-to-top-btn').style.display = 'block';
   } else {
       document.getElementById('scroll-to-top-btn').style.display = 'none';
@@ -157,24 +142,5 @@ function scrollToTop() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  // Get references to the read more link and the hidden content
-  var readMoreLink = document.getElementById("read-more-link");
-  var moreContent = document.getElementById("more-content");
 
-  // Add click event listener to the read more link
-  readMoreLink.addEventListener("click", function(event) {
-    // Prevent default behavior of the link
-    event.preventDefault();
-
-    // Toggle the visibility of the hidden content
-    if (moreContent.style.display === "none") {
-      moreContent.style.display = "inline"; // or "block" for block-level elements
-      readMoreLink.textContent = "Read less";
-    } else {
-      moreContent.style.display = "none";
-      readMoreLink.textContent = "Read more";
-    }
-  });
-});
 

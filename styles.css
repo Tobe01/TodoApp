@@ -195,7 +195,7 @@ h1 span {
   background-color: white;
 }
 
-/* CSS for Dark mode */
+ /* CSS for Dark mode  */
 
 :root {
     --primary-color: #edf2fc;
@@ -212,25 +212,37 @@ h1 span {
   cursor: pointer;
 }
 
-
-
-/* Read more link in the About Section */
-
-#read-more-linkk, #show-more-linkk  {
-  color: #007bff; /* Change the color of the link */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  transition: color 0.3s; /* Add transition for smoother color change */
-}
-
-#read-more-linkk:hover, #show-more-linkk:hover  {
-  color: #0056b3; /* Change color on hover */
-}
-
 .footer {
   background: #32383e;
   line-height: 1.6;
   color: #fff;
   font-size: 14px;
+}
+
+/* Read more link in the About Section */
+
+.read-me {
+  color: #007bff; /* Change the color of the link */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: color 0.3s; /* Add transition for smoother color change */
+}
+
+#more-text {
+  display: none;
+}
+
+.show-more-btn {
+  color: #007bff; /* Change the color of the link */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: color 0.3s; /* Add transition for smoother color change */
+}
+
+#show-more-btn:hover {
+  color: #0056b3; /* Change color on hover */
+}
+
+#read-me:hover {
+  color: #0056b3; /* Change color on hover */
 }
 
 /* CSS FOR PROJECTS AREA */
@@ -258,7 +270,7 @@ h1 span {
   z-index: 100;
 }
 
-/* Styles for scroll-to-top button */
+Styles for scroll-to-top button 
 
 #scroll-to-top-btn {
   position: fixed;

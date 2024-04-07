@@ -64,19 +64,17 @@ function hideMenu (){
 // Read more for About contents
 
 function toggleText() {
-  var moreText = document.getElementById("more-text");
-  var btnText = document.getElementById("show-more-btn");
+  var moreText = document.getElementById('more-text');
+  var btnText = document.getElementById('.show-more-btn');
 
-  if (moreText.style.display === "none") {
-      moreText.style.display = "inline";
-      btnText.innerHTML = "(... Show less)";
+  if (moreText.style.display === 'none') {
+      moreText.style.display = 'block';
+      btnText.textContent = '...Read Less';
   } else {
-      moreText.style.display = "none";
-      btnText.innerHTML = "(... Show more)";
+      moreText.style.display = 'none';
+      btnText.textContent = '...Read More';
   }
 }
-
-
 
 // Read more for Work experience contents
 
@@ -86,13 +84,12 @@ function toggleHiddenContent() {
 
   if (hiddenDiv.style.display === 'none') {
     hiddenDiv.style.display = 'block';
-    readMeText.textContent = 'Read Less';
+    readMeText.textContent = '...Read Less';
   } else {
     hiddenDiv.style.display = 'none';
-    readMeText.textContent = '... Read Me';
+    readMeText.textContent = '...Read More';
   }
 }
-
 
 function toggleText() {
   var moreText = document.getElementById("more-text");
@@ -122,7 +119,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
   });
 });
 
-
+/*
 // Show or hide scroll-to-top button based on scroll position
 
 window.addEventListener('scroll', function() {
@@ -140,7 +137,26 @@ function scrollToTop() {
       top: 0,
       behavior: 'smooth'
   });
-}
+} */
+
+document.addEventListener("DOMContentLoaded", function() {
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  // Show button when user scrolls down
+  window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  };
+
+  // Scroll to the top when button is clicked
+  scrollToTopBtn.onclick = function() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  };
+});
 
 
 

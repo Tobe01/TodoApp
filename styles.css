@@ -1,6 +1,7 @@
 /* CSS for portfoli site */
 
 body {
+  position: relative;
   font-family: Lato, arial, sans-serif;
   transition: background-color 0.3s ease;
   color: rgb(67, 67, 67);
@@ -270,7 +271,7 @@ h1 span {
   z-index: 100;
 }
 
-Styles for scroll-to-top button 
+/* Styles for scroll-to-top button  
 
 #scroll-to-top-btn {
   position: fixed;
@@ -292,6 +293,20 @@ Styles for scroll-to-top button
 100% {
   transform: translateY(-10px);
 }
+} */
+
+#scrollToTopBtn {
+  display: none; /* Hide the button by default */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 

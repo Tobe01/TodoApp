@@ -9,17 +9,6 @@ window.addEventListener('scroll', function() {
   }
 });
 
-// Dark mode 
-var icon = document.getElementById("icon");
-
-icon.onclick = function (){
-  document.body.classList.toggle("dark-theme");
-  if(document.body.classList.contains("dark-theme")){
-    icon.src = "thumbnails/toggle on.jpg";
-  }else {
-    icon.src = "Thumbnails/toggle off.jpg";
-  }
-} 
 
 // smooth scroll to each section
 
@@ -105,6 +94,41 @@ document.querySelectorAll('nav a').forEach(anchor => {
       });
   });
 });
+
+// Scroll to top button
+
+// Show the button when scrolling down
+window.onscroll = function() {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  var scrollBtn = document.getElementById("scrollBtn");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollBtn.style.display = "block";
+  } else {
+      scrollBtn.style.display = "none";
+  }
+}
+
+// Smooth scroll to top
+function scrollToTop() {
+  const scrollOptions = {
+      top: 0,
+      behavior: 'smooth'
+  };
+
+  // Check if the browser supports smooth scrolling
+  if ('scrollBehavior' in document.documentElement.style) {
+      window.scrollTo(scrollOptions);
+  } else {
+      // For browsers that don't support smooth scrolling, fallback to an instant scroll
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+  }
+}
+
+
 
 
 

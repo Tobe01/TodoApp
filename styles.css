@@ -196,8 +196,6 @@ h1 span {
   background-color: white;
 }
 
- /* CSS for Dark mode  */
-
 
 #icon {
   width: 50px;
@@ -262,5 +260,24 @@ h1 span {
   z-index: 100;
 }
 
+/* Scroll to top */
+
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+#scrollBtn:hover {
+  background-color: #0056b3;
+}
 
 

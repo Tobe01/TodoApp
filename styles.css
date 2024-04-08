@@ -198,15 +198,6 @@ h1 span {
 
  /* CSS for Dark mode  */
 
-:root {
-    --primary-color: #edf2fc;
-    --secondary-color: #212121;
-}
-
-.dark-theme {
-  --primary-color: black;
-  --secondary-color: white;
-}
 
 #icon {
   width: 50px;
@@ -271,42 +262,5 @@ h1 span {
   z-index: 100;
 }
 
-/* Styles for scroll-to-top button  
-
-#scroll-to-top-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  border: none;
-  color: white;
-  padding: 15px 25px;
-  cursor: pointer;
-  display: none;
-  box-shadow: 0px 1px 10px 1px rgba(182, 182, 182, 0.9);
-  animation: bounce 2s infinite alternate;
-}
-
-@keyframes bounce {
-0% {
-  transform: translateY(0);
-}
-100% {
-  transform: translateY(-10px);
-}
-} */
-
-#scrollToTopBtn {
-  display: none; /* Hide the button by default */
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
 

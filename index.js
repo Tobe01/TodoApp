@@ -65,7 +65,7 @@ function hideMenu (){
 
 function toggleText() {
   var moreText = document.getElementById('more-text');
-  var btnText = document.getElementById('.show-more-btn');
+  var btnText = document.querySelector('.show-more-btn');
 
   if (moreText.style.display === 'none') {
       moreText.style.display = 'block';
@@ -91,19 +91,6 @@ function toggleHiddenContent() {
   }
 }
 
-function toggleText() {
-  var moreText = document.getElementById("more-text");
-  var btnText = document.getElementById("toggle-btn");
-
-  if (moreText.style.display === "none") {
-      moreText.style.display = "inline";
-      btnText.innerHTML = "Show less";
-  } else {
-      moreText.style.display = "none";
-      btnText.innerHTML = "Show more";
-  }
-}
-
 // Section scrolling effect
 
 document.querySelectorAll('nav a').forEach(anchor => {
@@ -119,44 +106,6 @@ document.querySelectorAll('nav a').forEach(anchor => {
   });
 });
 
-/*
-// Show or hide scroll-to-top button based on scroll position
-
-window.addEventListener('scroll', function() {
-  if (window.scrollY > 100) {
-      document.getElementById('scroll-to-top-btn').style.display = 'block';
-  } else {
-      document.getElementById('scroll-to-top-btn').style.display = 'none';
-  }
-});
-
-// Function to scroll back to the top
-
-function scrollToTop() {
-  window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-  });
-} */
-
-document.addEventListener("DOMContentLoaded", function() {
-  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-  // Show button when user scrolls down
-  window.onscroll = function() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      scrollToTopBtn.style.display = "block";
-    } else {
-      scrollToTopBtn.style.display = "none";
-    }
-  };
-
-  // Scroll to the top when button is clicked
-  scrollToTopBtn.onclick = function() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-  };
-});
 
 
 

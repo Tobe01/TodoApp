@@ -5,10 +5,14 @@ body {
   font-family: Lato, arial, sans-serif;
   transition: background-color 0.3s ease;
   color: rgb(67, 67, 67);
+  color: var(--text-color);
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
-  background: rgb(218, 227, 231);
+  background: rgb(218, 227, 231); 
 }
+
+/* Dark mode */
+
 
 /* Animation for name, buttons and other details */
 
@@ -149,14 +153,117 @@ h1 span {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+/* CSS for toggle button starts here */
 
-.toggle-image {
-  border-top-left-radius: 14px;
-  border-top-right-radius: 14px;
-  border-bottom-left-radius: 14px;
-  border-bottom-right-radius: 14px;
+.switch {
+  font-size: 13px;
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 25px;
 }
 
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #73C0FC;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  left: 3px;
+  bottom: 3px;
+  z-index: 2;
+  background-color: #e8e8e8;
+  transition: .4s;
+}
+
+.sun svg {
+  position: absolute;
+  top: 3px;
+  left: 32px;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+}
+
+.moon svg {
+  fill: #73C0FC;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+}
+
+/* .switch:hover */.sun svg {
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+ 
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* .switch:hover */.moon svg {
+  animation: tilt 5s linear infinite;
+}
+
+@keyframes tilt {
+ 
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  75% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.input:checked + .slider {
+  background-color: #183153;
+}
+
+.input:focus + .slider {
+  box-shadow: 0 0 1px #183153;
+}
+
+.input:checked + .slider:before {
+  transform: translateX(30px);
+}
+
+/* CSS for toggle button ends here */
 
 .profile-photo-div {
   margin-right: 30px;
@@ -221,13 +328,13 @@ h1 span {
   display: none;
 }
 
-.show-more-btn {
+.showMoreBtn {
   color: #007bff; /* Change the color of the link */
   cursor: pointer; /* Change cursor to pointer on hover */
   transition: color 0.3s; /* Add transition for smoother color change */
 }
 
-#show-more-btn:hover {
+#showMoreBtn:hover {
   color: #0056b3; /* Change color on hover */
 }
 
@@ -258,7 +365,7 @@ h1 span {
 
 .navbar {
   z-index: 100;
-}
+} 
 
 /* Scroll to top */
 

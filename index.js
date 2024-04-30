@@ -52,16 +52,16 @@ function hideMenu (){
 
 // Read more for About contents
 
-function toggleText() {
-  var moreText = document.getElementById('more-text');
-  var btnText = document.querySelector('.show-more-btn');
+function showContents(){
+  const showMore = document.querySelector('.showMore');
+  const showMoreButton = document.querySelector('.showMoreBtn');
 
-  if (moreText.style.display === 'none') {
-      moreText.style.display = 'block';
-      btnText.textContent = '...Read Less';
+  if (showMore.style.display === 'none' && showMoreButton.innerHTML === '...Read More'){
+    showMore.style.display = 'flex';
+    showMoreButton.innerHTML = '...Read Less';
   } else {
-      moreText.style.display = 'none';
-      btnText.textContent = '...Read More';
+    showMore.style.display = 'none';
+    showMoreButton.innerHTML = '...Read More';
   }
 }
 
@@ -95,6 +95,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
   });
 });
 
+
 // Scroll to top button
 
 // Show the button when scrolling down
@@ -127,7 +128,6 @@ function scrollToTop() {
       document.body.scrollTop = 0;
   }
 }
-
 
 
 

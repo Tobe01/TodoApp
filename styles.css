@@ -1,390 +1,231 @@
-/* CSS for portfoli site */
-
-body {
+/* Add Task button */
+.button {
   position: relative;
-  font-family: Lato, arial, sans-serif;
-  transition: background-color 0.3s ease;
-  color: rgb(67, 67, 67);
-  color: var(--text-color);
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  background: rgb(218, 227, 231); 
-}
-
-/* Dark mode */
-
-
-/* Animation for name, buttons and other details */
-
-.fade-up {
-  position: relative;
-  animation: fade-up 700ms forwards ease-out;
-  animation-delay: var(--animation-delay);
-  opacity: 0;
-  bottom: -60px;
-}
-
-
-@keyframes fade-up {
-  0% {
-    opacity: 0;
-    bottom: -60px;
-  }
-
-  60% {
-    opacity: .7;
-    bottom: 4px;
-  }
-
-  100% {
-    opacity: 1;
-    bottom: 0px;
-  }
-}
-
-.desc {
-  --animation-delay: 500ms;
-}
-
-h1 span:nth-of-type(1) {
-  --animation-delay: 200ms;
-}
-h1 span:nth-of-type(2) {
-  --animation-delay: 400ms;
-}
-
-h1 span {
-  filter: blur(0px);
-  opacity: 0;
-  position: relative;
-  animation: blur 500ms forwards;
-  animation-delay: var(--animation-delay);
-}
-
-.soc1 {
-  filter: blur(0px);
-  opacity: 0;
-  position: relative;
-  animation: blur 500ms forwards;
-  animation-delay: var(--animation-delay);
-}
-
-.soc2 {
-  filter: blur(0px);
-  opacity: 0;
-  position: relative;
-  animation: blur 500ms forwards;
-  animation-delay: var(--animation-delay);
-}
-
-.soc3 {
-  filter: blur(0px);
-  opacity: 0;
-  position: relative;
-  animation: blur 500ms forwards;
-  animation-delay: var(--animation-delay);
-}
-
-.soc4 {
-  filter: blur(0px);
-  opacity: 0;
-  position: relative;
-  animation: blur 500ms forwards;
-  animation-delay: var(--animation-delay);
-}
-
-.soc1 {
-  --animation-delay: 10ms;
-}
-
-.soc2 {
-  --animation-delay: 200ms;
-}
-
-.soc3 {
-  --animation-delay: 400ms;
-}
-
-.soc4 {
-  --animation-delay: 600ms;
-}
-
-@keyframes blur {
-  0% {
-    filter: blur(40px);
-    opacity: 0;
-    bottom: -40px;
-  }
-  100% {
-    filter: blur(0px);
-    opacity: 1;
-    bottom: 0;
-  }
-}
-
-.cvbtn {
-  --animation-delay: 600ms;
-}
-
-.mode {
-  --animation-delay: 500ms;
-}
-
-.switch {
-  --animation-delay: 400ms;
-}
-
-.heading {
-  color: #545e69;
-  font-size: 24px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-}
-
-.name {
-  color: #49515a;
-  font-size: 38px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-}
-
-.tiny-nav {
-  backdrop-filter: blur(5px);
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-/* CSS for toggle button starts here */
-
-.switch {
-  font-size: 13px;
-  position: relative;
-  display: inline-block;
-  width: 55px;
-  height: 25px;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
+  width: 150px;
+  height: 40px;
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #73C0FC;
-  transition: .4s;
-  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #34974d;
+  background-color: #3aa856;
+  border-radius: 5px;
 }
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  border-radius: 20px;
-  left: 3px;
-  bottom: 3px;
-  z-index: 2;
-  background-color: #e8e8e8;
-  transition: .4s;
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
 }
 
-.sun svg {
-  position: absolute;
-  top: 3px;
-  left: 32px;
-  z-index: 1;
-  width: 20px;
-  height: 20px;
-}
-
-.moon svg {
-  fill: #73C0FC;
-  position: absolute;
-  top: 3px;
-  left: 5px;
-  z-index: 1;
-  width: 20px;
-  height: 20px;
-}
-
-/* .switch:hover */.sun svg {
-  animation: rotate 15s linear infinite;
-}
-
-@keyframes rotate {
- 
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/* .switch:hover */.moon svg {
-  animation: tilt 5s linear infinite;
-}
-
-@keyframes tilt {
- 
-  0% {
-    transform: rotate(0deg);
-  }
-
-  25% {
-    transform: rotate(-10deg);
-  }
-
-  75% {
-    transform: rotate(10deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-.input:checked + .slider {
-  background-color: #183153;
-}
-
-.input:focus + .slider {
-  box-shadow: 0 0 1px #183153;
-}
-
-.input:checked + .slider:before {
+.button .button__text {
   transform: translateX(30px);
+  color: #fff;
+  font-weight: 600;
 }
 
-/* CSS for toggle button ends here */
-
-.profile-photo-div {
-  margin-right: 30px;
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #34974d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.desc, .links {
-  color: #778492;
-  font-family: "Lato", arial, sans-serif;
-  font-weight: 400;
-  font-size: 24px;
+.button .svg {
+  width: 30px;
+  stroke: #fff;
 }
 
-.socials {
-  background: #b0b7bf;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
+.button:hover {
+  background: #34974d;
 }
 
-.nav-container {
-  padding: 30px 0;
-  background: #f5f5f5;
-  border-top: 10px solid #778492;
+.button:hover .button__text {
+  color: transparent;
 }
 
-.btn {
-    background: #54ba4e;
-    border: 1px solid #54ba4e;
-    color: #fff;
-    font-weight: 600;
-    text-transform: uppercase;
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
 }
 
-
-.links:hover {
-  box-shadow: 0px 1px 10px 1px rgba(182, 182, 182, 0.9);
-  background-color: white;
+.button:active .button__icon {
+  background-color: #2e8644;
 }
 
+.button:active {
+  border: 1px solid #2e8644;
+}
 
-#icon {
-  width: 50px;
+/* All button */
+
+.cssbuttons-io-button {
+  background: #a370f0;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 40px;
+  padding-right: 3.3em;
   cursor: pointer;
 }
 
-.footer {
-  background: #32383e;
-  line-height: 1.6;
-  color: #fff;
-  font-size: 14px;
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  padding-top: 2px;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 2.2em;
+  border-radius: 5px;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
 }
 
-/* Read more link in the About Section */
-
-.read-me {
-  color: #007bff; /* Change the color of the link */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  transition: color 0.3s; /* Add transition for smoother color change */
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
 }
 
-#more-text {
-  display: none;
+.cssbuttons-io-button .icon svg {
+  transition: transform 0.3s;
+  color: #7b52b9;
 }
 
-.showMoreBtn {
-  color: #007bff; /* Change the color of the link */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  transition: color 0.3s; /* Add transition for smoother color change */
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
 }
 
-#showMoreBtn:hover {
-  color: #0056b3; /* Change color on hover */
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
 }
 
-#read-me:hover {
-  color: #0056b3; /* Change color on hover */
-}
+/* ADD button */
 
-/* CSS FOR PROJECTS AREA */
-
-.projects-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.projects-main-container:hover {
- box-shadow: 5px 2px 15px 0px rgba(220, 218, 218, 0.3);
-}
-
-.watch-img {
-  width: 100%;
-  max-width: 100%;
-  max-height: 265px;
-}
-
-.cisco-img {
-  max-height: 330px; 
-}
-
-.navbar {
-  z-index: 100;
-} 
-
-/* Scroll to top */
-
-#scrollBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  background-color: #007bff;
+.addButton {
+  font-family: inherit;
+  font-size: 16px;
+  background: linear-gradient(to bottom, green 0%, green 100%);
   color: white;
+  padding: 5px 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
-  padding: 10px 15px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
 }
 
-#scrollBtn:hover {
-  background-color: #0056b3;
+.addButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
+.addButton:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
 
+.addButton span {
+  display: block;
+  margin-left: 0.4em;
+  transition: all 0.3s;
+}
+
+.addButton svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+  transition: all 0.3s;
+}
+
+.addButton .svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0.5em;
+  transition: all 0.3s;
+}
+
+.addButton:hover .svg-wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.addButton:hover svg {
+  transform: rotate(45deg);
+}
+
+/* Delete Button */
+.tooltip {
+  width: 37px;
+  padding: 5px 0;
+  max-height: 37px;
+  display: flex;
+  border-radius: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid transparent;
+  background-color: rgba(100,77,237,0.08);
+  transition: all 0.2s linear;
+ }
+ 
+ .tooltip:hover {
+  box-shadow: 3.4px 2.5px 4.9px rgba(0, 0, 0, 0.025),
+   8.6px 6.3px 12.4px rgba(0, 0, 0, 0.035),
+   17.5px 12.8px 25.3px rgba(0, 0, 0, 0.045),
+   36.1px 26.3px 52.2px rgba(0, 0, 0, 0.055),
+   99px 72px 143px rgba(0, 0, 0, 0.08);
+ }
+ 
+ .tooltip {
+  position: relative;
+  display: inline-block;
+ }
+ 
+ .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 4em;
+  background-color: rgba(0, 0, 0, 0.253);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 45%;
+ }
+ 
+ .tooltip:hover .tooltiptext {
+  visibility: visible;
+ }
+
+ .js-display {
+  padding: 15px 0 7px 10px;
+  display: grid;
+  grid-template-columns: 5fr 47px;
+  row-gap: 13px;
+  width: 97%;
+  border-radius: 5px;
+ }

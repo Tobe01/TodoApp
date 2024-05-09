@@ -1,1 +1,2 @@
-This repository contains source codes for my personal portfolio website.
+This repository contains source codes for my JavaScript TodoApp.
+# TodoApp

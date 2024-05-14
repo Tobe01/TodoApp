@@ -24,7 +24,7 @@ function viewTask(){
 
 
 // Get Input
-const todoList = [{
+let todoList = [{
   name: '',
   dueDate: '',
   time: ''
@@ -40,6 +40,8 @@ function getInput(){
   const time = timeElement.value;
 
   todoList.push({name, dueDate, time});
+  localStorage.setItem('todoList', JSON.stringify(todoList));
+
   console.log(todoList);
 
   inputElement.value = '';
@@ -48,6 +50,17 @@ function getInput(){
 
   renderTodo();
 }
+
+
+window.addEventListener('load', function(){
+  const savedTodoList = localStorage.getItem('todoList');
+  if(savedTodoList){
+    todoList = JSON.parse(savedTodoList);
+    renderTodo();
+    
+    console.log(todoList);
+  }
+});
 
 // Render Todo
 function renderTodo(){
@@ -87,3 +100,6 @@ function checkTodo(checkbox){
     nameField.style.textDecoration = 'none';
   }
 }
+
+
+
